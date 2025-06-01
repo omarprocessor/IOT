@@ -1,6 +1,6 @@
 # IOT projetcs
 
-This repository contains multiple IoT-based Arduino projects developed and tested using the AlphaBoard. Each folder represents a unique system aimed at solving real-world problems using sensors, actuators, and microcontrollers.
+This repository contains multiple IoT-based Arduino projects developed and tested using the Arduino uno and Esp32. Each folder represents a unique system aimed at solving real-world problems using sensors, actuators, and microcontrollers.
 
 ## Table of Contents
 
