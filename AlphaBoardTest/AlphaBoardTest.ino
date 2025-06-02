@@ -34,15 +34,16 @@ void setup() {
 void loop() {
   // main code
 
-  testPot(pot1, "Pot1");
-  testPot(pot2, "Pot2");
-  controlLeds(ledRed, ledYellow,ledGreen,pot1);
+testPot(pot1, "Pot1");
+testPot(pot2, "Pot2");
+controlLeds(ledRed, ledYellow,ledGreen,pot1);
  
-//  testLeds(ledRed,1000);
-//  testLeds(ledYellow,1000);
-//  testLeds(ledGreen,1000);
-testButton(button2);
-//controlBuzzer(buzzerPin,Pot2);
+//testLeds(ledRed,1000);
+//testLeds(ledYellow,1000);
+//testLeds(ledGreen,1000);
+
+//controlBuzzer(buzzerPin,pot2);
+
 delay(100);
 
 }
@@ -105,7 +106,7 @@ int  potval = analogRead(pot);
 void controlBuzzer(int buzzerPin, int pot)
 {
 int potval = analogRead(pot);
-if(digitalRead(button2))
-  
+
+tone(buzzerPin, potval);
 
 }
