@@ -41,7 +41,8 @@ void loop() {
 //  testLeds(ledRed,1000);
 //  testLeds(ledYellow,1000);
 //  testLeds(ledGreen,1000);
-controlBuzzer(buzzerPin,Pot2);
+testButton(button2);
+//controlBuzzer(buzzerPin,Pot2);
 delay(100);
 
 }
@@ -104,17 +105,7 @@ int  potval = analogRead(pot);
 void controlBuzzer(int buzzerPin, int pot)
 {
 int potval = analogRead(pot);
+if(digitalRead(button2))
+  
 
-  if (potval >= 683)
-  {
-    tone(buzzerPin, 1000);
-  }
-  else if (potval >= 341 && potval < 683)
-  {
-    tone(buzzerPin, 500); 
-  }
-  else
-  {
-     tone(buzzerPin, 250); 
-  }
 }
