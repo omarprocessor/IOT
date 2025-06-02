@@ -16,7 +16,6 @@ int pot1 = A1;
 int pot2 = A2;
 int button1 = A4;
 int button2 = A5;
-int infrared = 4;
 int ldrPin = A0;
 int ntcPin = A3;
 
